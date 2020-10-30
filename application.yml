@@ -1,0 +1,16 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: tacocloud
+      schema-action: create_if_not_exists
+      contact-points:
+        - 192.168.111.132
+      port: 9042
+      local-datacenter: datacenter1
+
+  application:
+    name: ingredient-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
