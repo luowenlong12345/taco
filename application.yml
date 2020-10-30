@@ -6,3 +6,5 @@ management:
     web:
       exposure:
         include: "*"
+greeting:
+  message: hello world!
